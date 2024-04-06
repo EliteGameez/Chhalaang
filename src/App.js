@@ -8,7 +8,7 @@ import React, { createContext, useState } from 'react';
 import Home from './Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UserProfile from './components/UserProfile/UserProfile';
-
+import Error from './common/Error';
 import NavBar from './common/NavBar';
 import Footer from './common/Footer';
 function App() {
@@ -27,10 +27,15 @@ function App() {
             <Route path='/signin' element={<Signin setUserId={(id) => setUserId(id)} />} />
             <Route path='/form' element={<Form />} />
             <Route path='/' element={<Home />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/error' element={<Error />} />
             <Route path="/userProfile" element={<UserProfile />} />
           </Routes>
         </Router>
       </div>
+      <br />
+      <br />
+      <br />
       <Footer></Footer>
     </UserContext.Provider>
   );
