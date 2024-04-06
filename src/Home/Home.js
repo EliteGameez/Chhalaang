@@ -12,6 +12,8 @@ import game9 from '../assets/img/game9.png';
 import game10 from '../assets/img/game10.png';
 import GameCarousel from './GameCarousel';
 import HorizontalCardList from './HorizontalCardList';
+import CollapsibleMenu from '../components/CollapsibleChat/CollapsibleChat';
+import DetailsWindow from '../components/DetailWindow/DetailWindow';
 const Home = () => {
     const [home, setHome] = React.useState({});
     const [games, setGames] = useState([
@@ -83,6 +85,7 @@ const Home = () => {
         { username: 'SnigdhaSS', location: 'Bangalore', interests: 'Action, Arcade' },
         // Add more cards as needed
     ];
+    const [selectedOption, setSelectedOption] = useState(null);
 
     return (
         <>
@@ -93,6 +96,8 @@ const Home = () => {
             <div className='users'>
                 <HorizontalCardList cards={cards} />
             </div>
+            <CollapsibleMenu onOptionSelect={(option) => setSelectedOption(option)} />
+            <DetailsWindow option={selectedOption} onClose={() => setSelectedOption(null)} />
         </>
     );
 };
