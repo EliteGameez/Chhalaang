@@ -1,0 +1,87 @@
+.small-game {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.small-game img {
+    width: 50px;
+    /* Adjust the size as needed */
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cas-row {
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.cas-row::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar width */
+    background: transparent;
+    /* Optional: make scrollbar area transparent */
+}
+
+.casside {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.casside::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.cas-main {
+    text-align: center;
+}
+
+.cas-main img {
+    /* Optional: Set max-width to prevent oversized images from overflowing */
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    /* Ensure the image behaves as a block element */
+    margin: auto;
+    /* Center the image horizontally */
+    /* Optional: Set max-width to prevent oversized images from overflowing */
+    max-width: 100%;
+}
+
+.card-list-container {
+    margin: 10px;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    white-space: nowrap;
+    /* Prevent cards from wrapping to next line */
+}
+
+.card-list-container::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar width */
+    background: transparent;
+    /* Optional: make scrollbar area transparent */
+}
+
+.card-list {
+    display: inline-flex;
+    /* Arrange cards in a horizontal row */
+}
+
+.card {
+    width: 200px;
+    /* Set card width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    /* Adjust spacing between cards */
+}
+
+/* .users {
+    width: 80%;
+    overflow-x: scroll;
+} */

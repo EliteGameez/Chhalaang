@@ -5,6 +5,8 @@ import Signin from './Signin/Signin';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Form from './Form/Form';
 import React, { createContext, useState } from 'react';
+import Home from './Home/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [userId, setUser] = useState();
@@ -18,10 +20,11 @@ function App() {
       <Router>
         <Routes>
           <Route path='/signup' element={<Signup/>} />
-          <Route path='/' element={<Signin setUserId={(id)=> setUserId(id)}/>} />
+          <Route path='/signin' element={<Signin setUserId={(id)=> setUserId(id)}/>} />
           <Route path='/form' element={<Form/>} />
+          <Route path='/' element={<Home />} />
         </Routes>
-     </Router>
+      </Router>
     </div>
     </UserContext.Provider>
   );
