@@ -12,6 +12,8 @@ const Signup = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [gender, setGender] = useState('');
     const [age, setAge] = useState('');
+    const [name, setName] = useState('');
+
 
 
 
@@ -58,6 +60,13 @@ const Signup = () => {
                         fieldErrors && <h3 className="error"> Please fill out the form correctly!</h3>
                     }
                     <form>
+                    <label>Name</label>
+                        <input type="text"
+                            label="Name"
+                            value={email}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                            placeholder="Name" />
                         <label>E-mail</label>
                         <input type="email"
                             label="Email address"
