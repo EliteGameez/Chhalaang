@@ -1,0 +1,47 @@
+.user-list {
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    background-color: #121212; /* Dark background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Adjust based on your preference */
+    margin: auto;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    background-color: #1E1E1E; /* Slightly lighter dark shade for the item background */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.user-item:hover {
+    background-color: #292929; /* Highlight item on hover */
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info {
+    color: #FFFFFF; /* White text color */
+}
+
+.user-name {
+    margin: 0;
+    font-size: 16px;
+}
+
+.user-description {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #AAAAAA; /* Lighter grey for less important text */
+}
