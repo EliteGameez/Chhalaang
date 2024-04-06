@@ -1,17 +1,15 @@
 import React from 'react';
-import Card from './Card';
+import Game from './Game';
 import { Row, Col } from 'react-bootstrap';
 
-const HorizontalCardList = ({ cards }) => {
+const HorizontalGameList = ({ games }) => {
     return (
         <Row>
             <Col xs={12} md={12}>
                 <div className="card-list-container">
                     <div className="card-list">
-                        {cards.map((card, index) => (
-                            <Card key={index} username={card.username}
-                                location={card.location}
-                                interests={card.interests} />
+                        {games.map((game, index) => (
+                            <Game key={index} title={game.title} image={game.image} />
                         ))}
                     </div>
                 </div>
@@ -20,4 +18,4 @@ const HorizontalCardList = ({ cards }) => {
     );
 };
 
-export default HorizontalCardList;
+export default HorizontalGameList;
