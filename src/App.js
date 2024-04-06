@@ -11,6 +11,8 @@ import UserProfile from './components/UserProfile/UserProfile';
 
 import NavBar from './common/NavBar';
 import Footer from './common/Footer';
+import UserProfile from './components/UserProfile/UserProfile';
+
 function App() {
   const [userId, setUser] = useState();
   const setUserId = (id) => {

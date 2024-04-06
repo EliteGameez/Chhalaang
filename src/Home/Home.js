@@ -16,6 +16,8 @@ import CollapsibleMenu from '../components/CollapsibleChat/CollapsibleChat';
 import DetailsWindow from '../components/DetailWindow/DetailWindow';
 import HorizontalGameList from './HorizontalCardList';
 
+import CollapsibleMenu from '../components/CollapsibleChat/CollapsibleChat';
+import DetailsWindow from '../components/DetailWindow/DetailWindow';
 const Home = () => {
     const [home, setHome] = React.useState({});
     const [games, setGames] = useState([
@@ -110,6 +112,8 @@ const Home = () => {
                 <h4 style={{ textAlign: "left", paddingLeft: "20px" }}>Arcade Games</h4>
                 <HorizontalGameList games={games} />
             </div> */}
+            <CollapsibleMenu onOptionSelect={(option) => setSelectedOption(option)} />
+            <DetailsWindow option={selectedOption} onClose={() => setSelectedOption(null)} />
         </>
     );
 };
