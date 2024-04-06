@@ -1,3 +1,7 @@
+.gamezone {
+    margin: 10px;
+}
+
 .small-game {
     display: flex;
     align-items: center;
