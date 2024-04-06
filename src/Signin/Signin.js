@@ -5,7 +5,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import './Signin.css';
 import { Row, Col } from 'react-bootstrap';
 
-const Login = ({setUserId}) => {
+const Login = ({setUserId, setLatitude, setLongitude}) => {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -17,12 +17,17 @@ const Login = ({setUserId}) => {
             setError(true);
             return;
         }
-
+        
+        navigator.geolocation.getCurrentPosition((position) => {
+            setLatitude(position.coords.latitude);
+            setLongitude(position.coords.longitude);
+            }); 
+    
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 // Signed in
                 const user = userCredential.user;
-                navigate("/home")
+                navigate("/")
                 setUserId(user.uid);
             })
             .catch((error) => {

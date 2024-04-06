@@ -1,7 +1,9 @@
 .gamezone {
     margin: 10px;
 }
-
+.connectbtn {
+    background-color: grey;
+}
 .small-game {
     display: flex;
     align-items: center;

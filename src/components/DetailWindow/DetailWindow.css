@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 20px; /* Adjust based on the height of your collapsible menu */
     right: 180px; /* Adjust based on the width of your details window */
-    width: 250px; /* Set the width of the details window */
+    width: 400px; /* Set the width of the details window */
     background-color: #222;
     color: #fff;
     padding: 20px;
@@ -17,5 +17,9 @@
     cursor: pointer;
     border: none;
     float: right;
+  }
+  .showProfileBtn:hover {
+text-decoration: underline;
+cursor: pointer;
   }
   
