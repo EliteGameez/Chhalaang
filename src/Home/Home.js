@@ -12,6 +12,8 @@ import game9 from '../assets/img/game9.png';
 import game10 from '../assets/img/game10.png';
 import GameCarousel from './GameCarousel';
 import HorizontalCardList from './HorizontalCardList';
+import HorizontalGameList from './HorizontalCardList';
+
 const Home = () => {
     const [home, setHome] = React.useState({});
     const [games, setGames] = useState([
@@ -68,6 +70,7 @@ const Home = () => {
 
         // Add more games as needed
     ]);
+
     const cards = [
         { username: 'Areesha500', location: 'Bangalore', interests: 'Action, Arcade' },
         { username: 'Shalini15', location: 'Bangalore', interests: 'Action, Arcade' },
@@ -87,12 +90,21 @@ const Home = () => {
     return (
         <>
             <div>
-                <h2>Featured Games</h2>
-                <GameCarousel games={games} />
+                <GameCarousel games={games} className="gamezone" />
             </div>
+            <br />
             <div className='users'>
+                <h4 style={{ textAlign: "left", paddingLeft: "20px" }}>Active Users</h4>
                 <HorizontalCardList cards={cards} />
             </div>
+            {/* <div className='users'>
+                <h4 style={{ textAlign: "left", paddingLeft: "20px" }}>Action Games</h4>
+                <HorizontalGameList games={games} />
+            </div>
+            <div className='users'>
+                <h4 style={{ textAlign: "left", paddingLeft: "20px" }}>Arcade Games</h4>
+                <HorizontalGameList games={games} />
+            </div> */}
         </>
     );
 };
