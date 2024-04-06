@@ -8,7 +8,7 @@ const GameCarousel = ({ games }) => {
         <Container>
             <Row>
                 <Col xs={12} md={12}>
-                    <h2>Featured Games</h2>
+                    <h2 style={{ color: "white" }}>Featured Games</h2>
                 </Col>
             </Row>
             <Row className='cas-row'>

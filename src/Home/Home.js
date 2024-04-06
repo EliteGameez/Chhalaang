@@ -101,14 +101,21 @@ const Home = () => {
                 <h4 style={{ textAlign: "left", paddingLeft: "20px" }}>Active Users</h4>
                 <HorizontalCardList cards={cards} />
             </div>
-            {/* <div className='users'>
+            <br />
+            <div className='users'>
                 <h4 style={{ textAlign: "left", paddingLeft: "20px" }}>Action Games</h4>
                 <HorizontalGameList games={games} />
             </div>
+            <br />
             <div className='users'>
                 <h4 style={{ textAlign: "left", paddingLeft: "20px" }}>Arcade Games</h4>
                 <HorizontalGameList games={games} />
-            </div> */}
+            </div>
+            <br />
+            <CollapsibleMenu onOptionSelect={(option) => setSelectedOption(option)} />
+            <DetailsWindow option={selectedOption} onClose={() => setSelectedOption(null)} />
+            <br />
+
         </>
     );
 };

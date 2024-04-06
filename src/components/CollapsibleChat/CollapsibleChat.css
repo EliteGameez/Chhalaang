@@ -1,42 +1,42 @@
 /* src/CollapsibleMenu.css */
 .collapsible-menu {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  .toggle-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .menu-list {
-    list-style-type: none;
-    margin: 10px 0 0;
-    padding: 0;
-    background-color: #222;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  }
-  
-  .menu-item {
-    color: #ddd;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-bottom: 1px solid #333;
-  }
-  
-  .menu-item:last-child {
-    border-bottom: none;
-  }
-  
-  .menu-item:hover {
-    background-color: #333;
-  }
-  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.toggle-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 10px 0 0;
+  padding: 0;
+  background-color: #222;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item {
+  color: #ddd;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:hover {
+  background-color: #333;
+}

@@ -1,23 +1,24 @@
 import React from 'react';
-
+import './common.css';
 const NavBar = () => {
     return (
         <>
             <nav className="navbar navbar-default">
                 <div className="container-fluid">
                     <div className="navbar-header">
-                        <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        {/* <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span className="sr-only">Toggle navigation</span>
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
-                        </button>
-                        <a className="navbar-brand" href="#">GamesKraft</a>
+                        </button> */}
+                        <a className="navbar-brand" href="#"><h2>GamesKraft</h2></a>
                     </div>
-                    <div id="navbar" className="navbar-collapse collapse">
+                    <div id="navbar" >
                         <ul className="nav navbar-nav">
-                            <li className="active"><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
+                            <li className="active"><a href="/home">Home</a></li>
+                            <li><a href="/game">Games</a></li>
+                            <li><a href="/blog">Blogs</a></li>
                             <li><a href="#">Contact</a></li>
                             <li className="dropdown">
                                 <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span className="caret"></span></a>
@@ -40,6 +41,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </nav>
+            <br />
             {/* <nav classNameName="navbar">
                 <ul>
                     <li><a href="/">Home</a></li>
