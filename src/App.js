@@ -7,6 +7,11 @@ import Form from './Form/Form';
 import React, { createContext, useState } from 'react';
 import Home from './Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import UserProfile from './components/UserProfile/UserProfile';
+
+import NavBar from './common/NavBar';
+import Footer from './common/Footer';
+import UserProfile from './components/UserProfile/UserProfile';
 import NavBar from './common/NavBar';
 import Footer from './common/Footer';
 function App() {
@@ -25,6 +30,7 @@ function App() {
             <Route path='/signin' element={<Signin setUserId={(id) => setUserId(id)} />} />
             <Route path='/form' element={<Form />} />
             <Route path='/' element={<Home />} />
+            <Route path="/userProfile" element = {<UserProfile/>}/>
           </Routes>
         </Router>
       </div>
