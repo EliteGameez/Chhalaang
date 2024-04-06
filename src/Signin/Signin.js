@@ -4,7 +4,7 @@ import { auth } from '../firebase';
 import { NavLink, useNavigate } from 'react-router-dom'
 import './Signin.css';
 
-const Login = () => {
+const Login = ({setUserId}) => {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -22,7 +22,7 @@ const Login = () => {
                 // Signed in
                 const user = userCredential.user;
                 navigate("/home")
-                console.log(user);
+                setUserId(user.uid);
             })
             .catch((error) => {
                 const errorCode = error.code;
