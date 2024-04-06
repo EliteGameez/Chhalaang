@@ -1,0 +1,21 @@
+.details-window {
+    position: fixed;
+    bottom: 20px; /* Adjust based on the height of your collapsible menu */
+    right: 180px; /* Adjust based on the width of your details window */
+    width: 250px; /* Set the width of the details window */
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    z-index: 100;
+  }
+  
+  .close-button {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    float: right;
+  }
+  

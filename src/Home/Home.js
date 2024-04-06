@@ -12,7 +12,11 @@ import game9 from '../assets/img/game9.png';
 import game10 from '../assets/img/game10.png';
 import GameCarousel from './GameCarousel';
 import HorizontalCardList from './HorizontalCardList';
+
+import CollapsibleMenu from '../components/CollapsibleChat/CollapsibleChat';
+import DetailsWindow from '../components/DetailWindow/DetailWindow';
 import HorizontalGameList from './HorizontalCardList';
+
 
 const Home = () => {
     const [home, setHome] = React.useState({});
@@ -86,6 +90,7 @@ const Home = () => {
         { username: 'SnigdhaSS', location: 'Bangalore', interests: 'Action, Arcade' },
         // Add more cards as needed
     ];
+    const [selectedOption, setSelectedOption] = useState(null);
 
     return (
         <>
@@ -97,6 +102,9 @@ const Home = () => {
                 <h4 style={{ textAlign: "left", paddingLeft: "20px" }}>Active Users</h4>
                 <HorizontalCardList cards={cards} />
             </div>
+            <CollapsibleMenu onOptionSelect={(option) => setSelectedOption(option)} />
+            <DetailsWindow option={selectedOption} onClose={() => setSelectedOption(null)} />
+
             {/* <div className='users'>
                 <h4 style={{ textAlign: "left", paddingLeft: "20px" }}>Action Games</h4>
                 <HorizontalGameList games={games} />
@@ -105,6 +113,10 @@ const Home = () => {
                 <h4 style={{ textAlign: "left", paddingLeft: "20px" }}>Arcade Games</h4>
                 <HorizontalGameList games={games} />
             </div> */}
+
+            <CollapsibleMenu onOptionSelect={(option) => setSelectedOption(option)} />
+            <DetailsWindow option={selectedOption} onClose={() => setSelectedOption(null)} />
+
         </>
     );
 };
