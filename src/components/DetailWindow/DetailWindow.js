@@ -14,8 +14,8 @@ const DetailsWindow = ({ option, onClose }) => {
 
   return (
     <div className="details-window">
-        <p>User1</p>
-        <p onClick={openUserProfile}>Show user profile</p>
+        <p>Snigdha</p>
+        <p className="showProfileBtn" onClick={openUserProfile}>Show user profile</p>
       <button onClick={onClose} className="close-button">Close</button>
       <h2>{option.label}</h2>
       <p>{option.details}</p>

@@ -58,12 +58,7 @@ const Form = () => {
 		},
 	};
 
-	useEffect(()=> {
-		navigator.geolocation.getCurrentPosition((position) => {
-			setLatitude(position.coords.latitude);
-			setLongitude(position.coords.longitude);
-		  }); 
-	});
+	
 
 	const onSubmit = () => {
 		axios.post('https://teamelitegameez.pythonanywhere.com/signup', form, {

@@ -1,6 +1,10 @@
+
 .App {
   text-align: center;
   color: black;
+  background-color: black;
+  height: 150%;
+  margin-top: -30px;
 }
 
 .root {

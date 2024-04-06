@@ -75,14 +75,14 @@ const Home = () => {
     ]);
 
     const cards = [
-        { username: 'Areesha500', location: 'Bangalore', interests: 'Action, Arcade' },
+        { username: 'Areesha', location: 'Bangalore', interests: 'Action, Arcade' },
+        { username: 'Shalini', location: 'Bangalore', interests: 'Action, Arcade' },
+        { username: 'Ramya', location: 'Bangalore', interests: 'Action, Arcade' },
+        { username: 'Snigdha', location: 'Bangalore', interests: 'Action, Arcade' },
+        { username: 'Areesha', location: 'Bangalore', interests: 'Action, Arcade' },
         { username: 'Shalini15', location: 'Bangalore', interests: 'Action, Arcade' },
-        { username: 'RamyaNNNY', location: 'Bangalore', interests: 'Action, Arcade' },
-        { username: 'SnigdhaSS', location: 'Bangalore', interests: 'Action, Arcade' },
-        { username: 'Areesha500', location: 'Bangalore', interests: 'Action, Arcade' },
-        { username: 'Shalini15', location: 'Bangalore', interests: 'Action, Arcade' },
-        { username: 'RamyaNNNY', location: 'Bangalore', interests: 'Action, Arcade' },
-        { username: 'SnigdhaSS', location: 'Bangalore', interests: 'Action, Arcade' },
+        { username: 'Ramya', location: 'Bangalore', interests: 'Action, Arcade' },
+        { username: 'Snigdha', location: 'Bangalore', interests: 'Action, Arcade' },
         { username: 'Areesha500', location: 'Bangalore', interests: 'Action, Arcade' },
         { username: 'Shalini15', location: 'Bangalore', interests: 'Action, Arcade' },
         { username: 'RamyaNNNY', location: 'Bangalore', interests: 'Action, Arcade' },

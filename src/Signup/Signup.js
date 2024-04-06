@@ -31,7 +31,7 @@ const Signup = () => {
                 // Signed in
                 const user = userCredential.user;
                 console.log(user);
-                navigate("/")
+                navigate("/signin")
                 // ...
             })
             .catch((error) => {
@@ -45,7 +45,7 @@ const Signup = () => {
     }
 
     return (
-        <div className="app"  >
+        <div className="signup"  >
             <div className="login" >
                 <h1>Create Account</h1>
                 <div className="container" >
@@ -60,13 +60,7 @@ const Signup = () => {
                         fieldErrors && <h3 className="error"> Please fill out the form correctly!</h3>
                     }
                     <form>
-                    <label>Name</label>
-                        <input type="text"
-                            label="Name"
-                            value={email}
-                            onChange={(e) => setName(e.target.value)}
-                            required
-                            placeholder="Name" />
+                    
                         <label>E-mail</label>
                         <input type="email"
                             label="Email address"
@@ -90,25 +84,8 @@ const Signup = () => {
                             onChange={(e) => setConfirmPassword(e.target.value)}
                             required
                             placeholder="Confirm Password" />
-                        <label>Gender</label>
-                        <select id="cars" name="gender" onChange={(e) => setGender(e.target.value)} >
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
+                        
 
-                        <label>Age</label>
-                        <input type="number"
-                            label="Age"
-                            value={email}
-                            onChange={(e) => setAge(e.target.value)}
-                            required
-                            placeholder="Age" />
-                        <div className="remember" >
-                            <input id='checkbox' type='checkbox' checked='checked' />
-                            <label for='checkbox' >
-                                <p>Remember Me</p>
-                            </label>
-                        </div>
                         <button type="submit"
                             onClick={onSubmit}   >Create Account</button>
                     </form>

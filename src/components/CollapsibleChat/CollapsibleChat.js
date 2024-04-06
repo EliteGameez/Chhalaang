@@ -5,7 +5,7 @@ import MyConnections from '../MyConnections/MyConnections';
 
 const CollapsibleMenu = ({onOptionSelect}) => {
   const [isOpen, setIsOpen] = useState(false);
-  const options = ['Option 1', 'Option 2', 'Option 3']; // Example options
+  const options = ['Snigdha', 'Ramya', 'Shalini', 'Areesha']; // Example options
 
   return (
     <div className="collapsible-menu">
